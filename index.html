@@ -3,24 +3,45 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Сайтик</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet"  href="Catstyle.css">
 	</head>
 <body>
-<img src="./images/photo_2023-02-09_15-34-22.jpg" alt="Кот Степан" width="450">
+
+<div class="container">
+
+<img src="./images/photo_2023-02-09_15-34-22.jpg" alt="Кот Степан" class="avatar block">
+
+
+
+<div class="block"	>
 	<h1>Кот Степан</h1>
-<p>Я черный кот, который <strong> приносит счастье</strong> моим хозяинам</p>
-<p>Я люблю спать и<em> орать под дверью</em>, когда она закрыта</p>
-<h4>Список соцсетей:</h4>
-<a href="http://">Инстаграм</a> |
-<a href="index.html">Телеграмм</a>|
-<a href="http://localhost:8080">B Контакте</a>
-<h2> Мои хобби:</h2>
+
+	<div class="par card">
+   <p>Я черный кот, который  приносит счастье моим хозяинам</p>
+  <p>  Я люблю спать и орать под дверью, когда она закрыта</p>
+ </div>
+
+<div class="links">
+   <h2>Список соцсетей:</h2>
+   <a href="http://">Инстаграм</a> |
+	<a href="index.html">Телеграмм</a>|
+   <a href="http://localhost:8080">B Контакте</a>
+</div>
+</div>
+
+<div class="hobby card">
+	<h2> Мои хобби:</h2>
+
 <ol>
 	<li>Жевать резинки</li>
 	<li>Точить когти</li>
 	<li>Выпрашивать еду</li>
 	<li>Быть красивым</li>
 </ol>
+	</div>
+
+<div class="experience card">
+	<h2>Опыт работы:</h2> <br>
 <table>
 	<thead>
 	<tr>
@@ -47,26 +68,35 @@
 	<tr>
 	</tbody>
 	</table>
-<h4>Связаться со мной</h4>
-<form action="/">
-	<div>
+
+</div>
+
+
+
+<form action="/" class="form" >
+	<div class="footer">
+	<h4>Связаться со мной</h4>
+	<div class="form-row">
+	<div class="inter">
 		<label for="name"  > Ваше имя: </label>
 		<input type="text" id="name" placeholder="Введите имя"  >
 	</div>
-	<div>
+	<div class="inter">
 		<label for="email">Ваш email:</label>
 		<input type="email" id="email" placeholder="Введите email">
 	</div>
-	<div>
+	</div>
+	<div class="inter">
 		<label for="massege">Сообщение:</label>
-		<br>
+
 		<textarea type="text" id="massege" placeholder="Введите сообщение..." cols="20"
 		rows="5"></textarea>
 	</div>
-	<br />
-	<button>ОТправить!</button>
+	</div>
+
+	<button class="btn">ОТправить!</button>
 </form>
 
-
+</div>
  </body>
 </html>
